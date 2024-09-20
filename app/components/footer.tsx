@@ -24,6 +24,17 @@ export default function Footer() {
             className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
             rel="noopener noreferrer"
             target="_blank"
+            href="https://buymeacoffee.com/hr1z0n"
+          >
+            <ArrowIcon />
+            <p className="ml-2 h-7">buy me a coffee!</p>
+          </a>
+        </li>
+        <li>
+          <a
+            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
+            rel="noopener noreferrer"
+            target="_blank"
             href="https://github.com/pratham-darooka/hr1z0n"
           >
             <ArrowIcon />
