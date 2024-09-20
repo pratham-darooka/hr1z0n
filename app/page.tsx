@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <section>
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        hi, i'm hr1z0n :]
+        👾 hi, i'm hr1z0n :]
       </h1>
       <p className="mb-4">
         {/* If you find this: Here's the original that was rephrased by AI :] */}
@@ -24,7 +24,7 @@ export default function Page() {
         eagerly diving into the nuances.`}
         <br/>
         <br/>
-        {`born and raised in India 🇮🇳 , i later resided in the US 🇺🇸 for over 5 years, 
+        {`born and raised in India, i later resided in the US for over 5 years, 
         cultivating a diverse worldview and unique perspectives.`}
         <br/>
         <br/>
