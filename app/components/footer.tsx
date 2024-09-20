@@ -27,7 +27,7 @@ export default function Footer() {
             href="https://buymeacoffee.com/hr1z0n"
           >
             <ArrowIcon />
-            <p className="ml-2 h-7">buy me a coffee!</p>
+            <p className="ml-2 h-7">fund my coffee!</p>
           </a>
         </li>
         <li>
