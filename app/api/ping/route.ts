@@ -6,7 +6,7 @@ export async function GET(req: NextRequest) {
   try {
     return NextResponse.json(
       {
-        message: "Hello from the NextJS API",
+        message: "this works!",
       },
       {
         headers: {

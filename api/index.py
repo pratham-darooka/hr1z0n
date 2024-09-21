@@ -1,7 +1,10 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, APIRouter
 
 app = FastAPI(docs_url="/api/py/docs", openapi_url="/api/py/openapi.json")
+api_router = APIRouter(prefix="/api/py")
 
-@app.get("/api/py/healthcheck")
-def healthchecker():
-    return {"status": "success", "message": "Integrated FastAPI Framework with Next.js successfully!"}
+@api_router.get("/ping", tags=["Health Check"])
+def ping():
+    return {"status": "success", "message": "this works!"}
+
+app.include_router(api_router)
