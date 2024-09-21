@@ -17,14 +17,14 @@ export default function Page() {
         Will keep adding more content as I learn more about myself and my journey.
         These blogs would be for my knowledge but will be rephrased using AI - I am not a good writer.`} */}
         
-        {`i am an avid enthusiast of generative AI (something I used to rephrase this bio and the blogs), 
-        wholeheartedly pursuing my passion as a career. 
+        {`i am an avid enthusiast of generative AI (something I used to rephrase this bio and make my thoughts less snarky), 
+        wholeheartedly pursuing my passion as a career.
         financial stuff, particularly the stock market sparks my curiosity, 
         and i also gravitate towards personal finance development, 
         eagerly diving into the nuances.`}
         <br/>
         <br/>
-        {`born and raised in India, i later resided in the US for over 5 years, 
+        {`born and raised in india, i later resided in the usa for over 5 years,  
         cultivating a diverse worldview and unique perspectives.`}
         <br/>
         <br/>
