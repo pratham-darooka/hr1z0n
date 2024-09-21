@@ -1,7 +1,11 @@
 {
+  "name": "hr1z0n",
+  "version": "0.0.1-alpha",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "fastapi-dev": "pip3 install -r requirements.txt && python3 -m uvicorn api.index:app --reload",
+    "next-dev": "next dev",
+    "dev": "concurrently \"npm run next-dev\" \"npm run fastapi-dev\"",
     "build": "next build",
     "start": "next start"
   },
@@ -12,6 +16,7 @@
     "@types/react-dom": "18.2.19",
     "@vercel/analytics": "^1.1.3",
     "@vercel/speed-insights": "^1.0.9",
+    "concurrently": "^9.0.1",
     "geist": "1.2.2",
     "next": "canary",
     "next-mdx-remote": "^4.4.1",
