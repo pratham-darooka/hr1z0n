@@ -1,17 +1,17 @@
-langchain
-langchain-community
-langchain-groq
-langchain-google-genai
-langchain-chroma
-langchain-huggingface
+# langchain
+# langchain-community
+# langchain-groq
+# langchain-google-genai
+# langchain-chroma
+# langchain-huggingface
 
-llama-index
-llama-parse
+# llama-index
+# llama-parse
 
-unstructured[all-docs]
-chromadb
+# unstructured[all-docs]
+# chromadb
+# tavily-python
 loguru
 icecream
 fastapi
 uvicorn[standard]
-tavily-python
