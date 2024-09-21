@@ -1,7 +1,4 @@
 langchain
 langchain-google-genai
-tavily-python
-loguru
-icecream
 fastapi
 uvicorn[standard]
