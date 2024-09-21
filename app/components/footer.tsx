@@ -43,7 +43,7 @@ export default function Footer() {
         </li>
       </ul>
       <p className="mt-8 text-neutral-600 dark:text-neutral-300">
-        © {new Date().getFullYear()} | made with ❤️, by hr1z0n
+        Copyright © {new Date().getFullYear()} pd | made with ❤️ by hr1z0n
       </p>
     </footer>
   )

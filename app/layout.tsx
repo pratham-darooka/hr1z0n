@@ -15,10 +15,10 @@ export const metadata: Metadata = {
     default: 'hr1z0n',
     template: '%s | hr1z0n',
   },
-  description: 'This is my portfolio.',
+  description: 'someplace to express my thoughts and experiences.',
   openGraph: {
     title: 'hr1z0n',
-    description: 'Thoughts and experiences.',
+    description: 'someplace to express my thoughts and experiences.',
     url: baseUrl,
     siteName: 'hr1z0n',
     locale: 'en_US',
