@@ -20,6 +20,7 @@ export function generateMetadata({ params }) {
   let {
     title,
     publishedAt: publishedTime,
+    domain,
     summary: description,
     image,
   } = post.metadata
@@ -33,6 +34,7 @@ export function generateMetadata({ params }) {
     openGraph: {
       title,
       description,
+      domain,
       type: 'article',
       publishedTime,
       url: `${baseUrl}/blog/${post.slug}`,
@@ -45,6 +47,7 @@ export function generateMetadata({ params }) {
     twitter: {
       card: 'summary_large_image',
       title,
+      domain,
       description,
       images: [ogImage],
     },
@@ -68,6 +71,7 @@ export default function Blog({ params }) {
             '@context': 'https://schema.org',
             '@type': 'BlogPosting',
             headline: post.metadata.title,
+            domain: post.metadata.domain,
             datePublished: post.metadata.publishedAt,
             dateModified: post.metadata.publishedAt,
             description: post.metadata.summary,
@@ -86,6 +90,9 @@ export default function Blog({ params }) {
         {post.metadata.title}
       </h1>
       <div className="flex justify-between items-center mt-2 mb-8 text-sm">
+        <p className="text-sm text-neutral-600 dark:text-neutral-400">
+          {post.metadata.domain}
+        </p>
         <p className="text-sm text-neutral-600 dark:text-neutral-400">
           {formatDate(post.metadata.publishedAt)}
         </p>
