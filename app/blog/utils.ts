@@ -78,10 +78,10 @@ export function formatDate(date: string, includeRelative = false) {
   }
 
   let fullDate = targetDate.toLocaleString('en-us', {
-    month: 'long',
     // day: 'numeric',
+    month: 'long',
     year: 'numeric',
-  })
+  }).replace(/\b\w+/g, (month) => month.toLowerCase())
 
   if (!includeRelative) {
     return fullDate
