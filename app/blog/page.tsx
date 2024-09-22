@@ -1,4 +1,5 @@
 import { BlogPosts } from 'app/components/posts'
+import Link from 'next/link'
 
 export const metadata = {
   title: 'my thoughts',
@@ -10,6 +11,10 @@ export default function Page() {
     <section>
       <h1 className="font-semibold text-2xl mb-8 tracking-tighter">welcome to my brain</h1>
       <BlogPosts />
+      <br />
+      <Link href="/blog/chat">
+        chat with me <u>here</u>! (feature under development)
+      </Link>
     </section>
   )
 }
