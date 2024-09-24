@@ -24,7 +24,7 @@ export default function Page() {
         eagerly diving into the nuances.`}
         <br/>
         <br/>
-        {`born and raised in india, i later resided in the usa for over 5 years,  
+        {`born and raised in india, i moved to the usa for some real-world tech experience for 5 years,  
         cultivating a diverse worldview and unique perspectives.`}
         <br/>
         <br/>
