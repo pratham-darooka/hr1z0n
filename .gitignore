@@ -20,7 +20,7 @@
 *.pem
 .vscode
 youtube_links.txt
-cache/*.txt
+cache
 
 # debug
 npm-debug.log*
