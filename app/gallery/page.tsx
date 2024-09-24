@@ -1,4 +1,7 @@
-import Head from 'next/head';
+export const metadata = {
+  title: 'gallery',
+  description: 'Enjoy some unfiltered clicks.',
+}
 
 const Page = () => {
   return (

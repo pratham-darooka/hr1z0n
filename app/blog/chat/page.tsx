@@ -1,4 +1,7 @@
-import Head from 'next/head';
+export const metadata = {
+  title: 'chat',
+  description: 'Chat with hr1z0n.',
+}
 
 const Page = () => {
   return (

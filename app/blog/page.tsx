@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const metadata = {
   title: 'my thoughts',
-  description: 'Read my thoughts and experiences.',
+  description: 'Read hr1z0n\'s thoughts and experiences.',
 }
 
 export default function Page() {

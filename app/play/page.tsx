@@ -1,5 +1,9 @@
-import Head from 'next/head';
 import Link from 'next/link'
+
+export const metadata = {
+  title: 'play',
+  description: 'Have fun with hr1z0n\'s developments.',
+}
 
 const Page = () => {
   return (
