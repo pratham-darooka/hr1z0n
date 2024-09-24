@@ -7,7 +7,7 @@ const Page = () => {
   return (
     <div>
         <h1 className="font-semibold text-2xl mb-8 tracking-tighter">
-          gallery coming soon! 📷
+          📷 gallery coming soon!
         </h1>
     </div>
   );
