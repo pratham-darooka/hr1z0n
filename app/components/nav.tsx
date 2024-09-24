@@ -10,7 +10,9 @@ const navItems = {
   '/gallery': {
     name: 'gallery',
   },
-  
+  '/play':{
+    name: 'play',
+  }
 }
 
 export function Navbar() {
