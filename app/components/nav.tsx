@@ -5,7 +5,7 @@ const navItems = {
     name: 'home',
   },
   '/blog': {
-    name: 'thoughts',
+    name: 'my thoughts',
   },
   '/gallery': {
     name: 'gallery',
@@ -20,16 +20,16 @@ export function Navbar() {
     <aside className="-ml-[8px] mb-16 tracking-tight">
       <div className="lg:sticky lg:top-20">
         <nav
-          className="flex flex-row justify-center items-center relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
+          className="flex flex-row items-start justify-center px-0 pb-0 md:overflow-auto scroll-pr-6 relative"
           id="nav"
         >
-          <div className="flex flex-row space-x-8 pr-10">
+          <div className="flex flex-wrap justify-center space-x-4 md:space-x-8 pr-2 md:pr-10">
             {Object.entries(navItems).map(([path, { name }]) => {
               return (
                 <Link
                   key={path}
                   href={path}
-                  className="transition-all text-base hover:text-neutral-800 dark:hover:text-neutral-200 flex justify-center relative py-1 px-2"
+                  className="transition-all text-base md:text-lg hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2"
                 >
                   {name}
                 </Link>
