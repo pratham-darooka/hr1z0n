@@ -8,7 +8,7 @@ const Page = () => {
           have some fun here 🎮
         </h1>
           <Link href='https://pictionary-ai.vercel.app/'>
-            : play pictionary with ai (WIP!)
+            : play pictionary with ai (feature under development)
           </Link>
     </div>
   );

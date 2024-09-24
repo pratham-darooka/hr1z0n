@@ -7,12 +7,16 @@ export function BlogPosts() {
   return (
     <div>
       <div className="w-full flex flex-col md:flex-row space-x-0 md:space-x-2">
-              <p className="text-neutral-900 dark:text-neutral-100 w-[150px] tracking-tight">
+              <p className="text-neutral-900 dark:text-neutral-100 w-full tracking-tight">
+                <u>some recent thoughts</u>:
+              </p>
+              {/* <p className="text-neutral-900 dark:text-neutral-100 w-[150px] tracking-tight">
                 <u>sequence</u>
               </p>
               <p className="text-neutral-600 dark:text-neutral-400 tabular-nums">
                 :&nbsp;<u>domain</u>
               </p>
+              <br /> */}
       </div>
       {allBlogs
         .sort((a, b) => {
@@ -30,10 +34,10 @@ export function BlogPosts() {
             href={`/blog/${post.slug}`}
           >
             <div className="w-full flex flex-col md:flex-row space-x-0 md:space-x-2">
-              <p className="text-neutral-900 dark:text-neutral-100 w-[150px] tracking-tight">
+              <p className="text-neutral-900 dark:text-neutral-100 w-1/2 tracking-tight">
                 {post.metadata.title}
               </p>
-              <p className="text-neutral-600 dark:text-neutral-400 w-[300px] tabular-nums">
+              <p className="text-neutral-600 dark:text-neutral-400 w-full tabular-nums">
                 :&nbsp;{post.metadata.domain} 
                 {/* {post.metadata.domain},&nbsp; */}
                 {/* {formatDate(post.metadata.publishedAt, false)} */}
