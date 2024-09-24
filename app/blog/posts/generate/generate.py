@@ -57,8 +57,9 @@ def create_blog(topic, requirements, content, blog_post_directory):
 Given a topic and some content, I want you to create a blog post article in markdown format. \
 You will use relatable language for gen z, avoid long boring paragraphs, make the blog engaging. give personal examples wherever possible. \
 You will match the tone (don't make it sound very meta), format and writing style (all lower cases unless emphasis) of the example blogs. \
-Please follow a blog format, use --- separators, headings, add a tldr. Do not avoid the metadata. Feel free to make the summary clickbait. \
-You are allowed to veer off the content provided, but you must not deviate too much from it. You must not mention words like 'videos', 'episodes', etc.
+Please follow the example blog's format, use --- separators, headings, add a tldr, lowercases unless you want emphasis. Do not avoid the metadata. Feel free to make the summary clickbait. \
+You are allowed to veer off the content provided, but you must not deviate too much from it. You must not mention words like 'videos', 'episodes', etc. \
+Title should be short, clickbait, catchy and engaging. You can use the topic as the title. \
 You can mention the experts but make me sound very intelligent and that i have watched all their interviews/podcasts to write this blog.\n
 {example_blog}"""),
         ("user", "{topic}\nAdditional Requirements for blog: {requirements}\nContent you may use:{content}"),
