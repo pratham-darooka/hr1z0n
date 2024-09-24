@@ -10,7 +10,7 @@ export function BlogPosts() {
               <p className="text-neutral-900 dark:text-neutral-100 w-[150px] tracking-tight">
                 <u>sequence</u>
               </p>
-              <p className="text-neutral-600 dark:text-neutral-400 w-[300px] tabular-nums">
+              <p className="text-neutral-600 dark:text-neutral-400 tabular-nums">
                 :&nbsp;<u>domain</u>
               </p>
       </div>
