@@ -20,7 +20,7 @@ export default function Page() {
       <br />
       <br />
       <Link href="/blog/chat">
-        chat with me <u>here</u>! (feature under development)
+        chat with me <u>here</u>! (under development)
       </Link>
     </section>
   )

@@ -8,7 +8,7 @@ export function BlogPosts() {
     <div>
       <div className="w-full flex flex-col md:flex-row space-x-0 md:space-x-2">
               <p className="text-neutral-900 dark:text-neutral-100 w-full tracking-tight">
-                <u>some recent thoughts</u>:
+                <u>some recent thoughts/learnings</u>:<br />
               </p>
               {/* <p className="text-neutral-900 dark:text-neutral-100 w-[150px] tracking-tight">
                 <u>sequence</u>

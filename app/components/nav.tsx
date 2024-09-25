@@ -10,8 +10,8 @@ const navItems = {
   '/gallery': {
     name: 'gallery',
   },
-  '/play':{
-    name: 'play',
+  '/fun':{
+    name: 'fun stuff',
   }
 }
 
