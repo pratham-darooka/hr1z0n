@@ -35,7 +35,10 @@ def get_yt_links(yt_links_file = YT_LINKS_FILE):
 def get_yt_summaries(yt_links = get_yt_links()):
     summaries = []
     for yt_link in yt_links:
-        video_summary = get_video_summary(yt_link)
+        try:
+            video_summary = get_video_summary(yt_link)
+        except SystemError:
+            pass
         time.sleep(60)
         summaries.append(video_summary)
         print("##########")
@@ -46,7 +49,7 @@ def get_yt_summaries(yt_links = get_yt_links()):
 # Create a blog post
 def create_blog(topic, requirements, content, blog_post_directory):
     llm = ChatGoogleGenerativeAI(
-            model='gemini-1.5-flash',
+            model='gemini-1.5-pro',
             # model='gemini-1.5-pro-exp-0801',
             api_key=os.environ['GOOGLE_API_KEY'], 
             temperature=0,
