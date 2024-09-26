@@ -7,7 +7,7 @@ const navItems = {
   '/blog': {
     name: 'my thoughts',
   },
-  '/gallery': {
+  'https://gallery.hr1z0n.com/': {
     name: 'gallery',
   },
   '/fun':{
