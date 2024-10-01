@@ -33,7 +33,7 @@ def get_video_summary(video_url):
                     f.write(d.page_content)
             print("saved!")
 
-            llm = ChatGoogleGenerativeAI(temperature=0, model="gemini-1.5-flash-latest")
+            llm = ChatGoogleGenerativeAI(temperature=0, model="gemini-1.5-flash-002")
 
             # Using Stuff
             chain = load_summarize_chain(llm, chain_type="stuff")
