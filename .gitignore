@@ -21,6 +21,7 @@
 .vscode
 youtube_links.txt
 cache
+tmp.txt
 
 # debug
 npm-debug.log*

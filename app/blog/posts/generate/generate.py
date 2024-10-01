@@ -1,6 +1,7 @@
 # python app/blog/posts/generate/generate.py
 from icecream import ic
 from langchain_google_genai import ChatGoogleGenerativeAI
+from tenacity import retry, stop_after_attempt, wait_fixed
 from langchain.prompts import ChatPromptTemplate
 from get_blog_content import get_video_summary
 import glob
@@ -47,6 +48,7 @@ def get_yt_summaries(yt_links = get_yt_links()):
     return summaries
 ################################################################################
 # Create a blog post
+@retry(stop=stop_after_attempt(3), wait=wait_fixed(60))
 def create_blog(topic, requirements, content, blog_post_directory):
     llm = ChatGoogleGenerativeAI(
             model='gemini-1.5-pro-002',
