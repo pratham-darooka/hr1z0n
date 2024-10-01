@@ -49,7 +49,7 @@ def get_yt_summaries(yt_links = get_yt_links()):
 # Create a blog post
 def create_blog(topic, requirements, content, blog_post_directory):
     llm = ChatGoogleGenerativeAI(
-            model='gemini-1.5-pro',
+            model='gemini-1.5-pro-002',
             # model='gemini-1.5-pro-exp-0801',
             api_key=os.environ['GOOGLE_API_KEY'], 
             temperature=0,
@@ -64,6 +64,7 @@ Please follow the example blog's format, use --- separators, headings, add a tld
 You are allowed to veer off the content provided, but you must not deviate too much from it. You must not mention words like 'videos', 'episodes', etc. \
 Title should be short, clickbait, catchy and engaging. You can use the topic as the title. \
 You can mention the experts but make me sound very intelligent and that i have watched all their interviews/podcasts to write this blog.\n
+You should miss no relevant details from the podcasts/content provided.\n
 {example_blog}"""),
         ("user", "{topic}\nAdditional Requirements for blog: {requirements}\nContent you may use:{content}"),
     ])
