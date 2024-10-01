@@ -65,7 +65,7 @@ You will match the tone (don't make it sound very meta), format and writing styl
 Please follow the example blog's format, use --- separators, headings, add a tldr, lowercases unless you want emphasis. Do not avoid the metadata. Feel free to make the summary clickbait. \
 You are allowed to veer off the content provided, but you must not deviate too much from it. You must not mention words like 'videos', 'episodes', etc. \
 Title should be short, clickbait, catchy and engaging. You can use the topic as the title. \
-You can mention the experts but make me sound very intelligent and that i have watched all their interviews/podcasts to write this blog.\n
+You can mention the experts but make me sound very intelligent and that i have watched all the hours of their interviews/podcasts to write this blog.\n
 You should miss no relevant details from the podcasts/content provided.\n
 {example_blog}"""),
         ("user", "{topic}\nAdditional Requirements for blog: {requirements}\nContent you may use:{content}"),
